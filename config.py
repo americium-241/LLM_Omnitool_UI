@@ -3,9 +3,6 @@ import logging
 from langchain.agents import AgentType 
 import os 
 
-#Define api_keys session_state if you want to hardcode them
-os.environ["OPENAI_API_KEY"] ='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' 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] ='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'
 
 # Logger level 
 LOGGER_LEVEL=logging.INFO
