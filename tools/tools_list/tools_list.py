@@ -448,7 +448,7 @@ def autogen_plan(question):
 def powershell_terminal(command):
     '''send powershell commands to be executed'''
     import subprocess
-    process = subprocess.Popen(["powershell", command], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    process = subprocess.Popen(["powershell", command], stdout=subprocess.PIPE, stderr=subprocess.PIPE , cwd='./workspace')
     result, error = process.communicate()
 
     # First try decoding with UTF-8
