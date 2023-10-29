@@ -1,7 +1,7 @@
 import streamlit as st
 
 def info_page(): 
-    st.info('This project is currently in development and bugs can be reported here : [Github issue](https://github.com/americium-241/LLM_ultimate_interface)')
+    st.info('This project is currently in development and bugs can be reported here : [Github issue](https://github.com/americium-241/Omnitool_UI/tree/master)')
 
     st.markdown("""
                 # Usage guidelines
@@ -60,7 +60,7 @@ def info_page():
 
                 You can make custom tools from multiple ways : 
 
-                1. Make a new python file at LLM_OmniToolUI/tools/tools_list : 
+                1. Make a new python file at Omnitool_UI/tools/tools_list : 
             
                 - make a single function with a docstring to describe tool usage and a return relevant for the chatbot though process""")
     function_exemple = """
@@ -126,11 +126,11 @@ def info_page():
                 
                 2. Use the in-app add tool form. Only supports function tool creation
                 3. Use the chatbot make_tool tool. Only supports function tool creation
-                any tool create by the form or the make_tool are creating a new tool file (LLM_OmniToolUI/tools/tools_list)
+                any tool create by the form or the make_tool are creating a new tool file (Omnitool_UI/tools/tools_list)
                     
                 ### Agents
 
-                You can make custom agents by creating a new python file at LLM_OmniToolUI/agents/agents_list : 
+                You can make custom agents by creating a new python file at Omnitool_UI/agents/agents_list : 
 
                 - Write a single class with an initialize_agent method that returns an object with a run method. The output of the run is expected to be the answer to the user input 
                 - The custom agent example, taken from langchain how to, gives a minimalistic template to begin

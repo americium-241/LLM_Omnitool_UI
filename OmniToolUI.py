@@ -39,8 +39,8 @@ st.set_page_config(
     page_icon=im,
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'https://github.com/americium-241/LLM_ultimate_interface/tree/master',
-        'Report a bug': "https://github.com/americium-241/LLM_ultimate_interface/tree/master",
+        'Get Help': 'https://github.com/americium-241/Omnitool_UI/tree/master',
+        'Report a bug': "https://github.com/americium-241/Omnitool_UI/tree/master",
         'About': "Prototype for highly interactive and customizable chatbot "
     }
 )
