@@ -11,7 +11,7 @@ For an illustrative breakdown of the application's structure and flow, refer to 
 
 
 The project integrates voice commands to push for seamless interaction and leverage vector data base for relevant document retriving. 
-Advanced users can modify the project very easily thanks to its modular architecture, giving you full control to extend the chatbot functionnalities. Manage API keys, configure chatbot settings, connect it to all your custom tools and data and unleash the full potential of AI chatbot, I mean, hopefully one day, when this project, well, let's be real, when another one build a complete UI so we can just play with chatbots. In the meantime, please have a look and enjoy the ride. 
+Advanced users can modify the project very easily thanks to its modular architecture, giving you full control to extend the chatbot functionnalities. Manage API keys, configure chatbot settings, connect it to all your custom tools and data and unleash the full potential of AI chatbot, I mean, hopefully one day, when this project will be complete. In the meantime, please have a look and enjoy the ride. 
 
 Here is a x2 speed demonstration of the app: 
 
