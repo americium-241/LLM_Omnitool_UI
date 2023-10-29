@@ -39,10 +39,11 @@ Summary
 [<img src="./assets/video2_thumbnail.png" width="100%">](https://github.com/americium-241/Omnitool_UI/assets/64111755/d2666654-bb5b-4da2-93cb-b3c0d4fd0e53)
 
 
-
-
-
 - Terminal navigation
+
+
+https://github.com/americium-241/Omnitool_UI/assets/64111755/63c0a54a-1362-47ba-a7c6-7a67bf0dc1f4
+
 
 2. **Tools showcase**:
 
