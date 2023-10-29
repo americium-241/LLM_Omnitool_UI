@@ -40,7 +40,7 @@ def make_mui_card(tool):
 
         tool_name = tool.name 
         tool_icon = '🔧 ' if 'StructuredTool' in tool.__class__.__name__ else '🦜️ '
-        tool_link =r'https://github.com/americium-241/LLM_ultimate_interface'if 'StructuredTool' in tool.__class__.__name__ else r'https://integrations.langchain.com/tools' 
+        tool_link =r'https://github.com/americium-241/Omnitool_UI/tree/master'if 'StructuredTool' in tool.__class__.__name__ else r'https://integrations.langchain.com/tools' 
         tool_title = tool_name
         tool_description = tool.description 
         tool_ui = defautui
