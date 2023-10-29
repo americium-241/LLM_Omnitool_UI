@@ -174,7 +174,7 @@ The project tree diagram below gives precisions on which file/folder can easily 
   2. **Navigate to the Repository Directory**:
      
   ```bash
-  cd path/Omnitool_UI
+  cd ./Omnitool_UI
   ```
   
   Using virtual environment is highly recommanded:
