@@ -33,7 +33,7 @@ BASE_DIR= os.path.dirname(os.path.realpath(__file__))
 logger.debug('BASE_DIR :'+BASE_DIR)
 
 
-im = Image.open(BASE_DIR+'\\assets\\appicon.ico')
+im = Image.open(BASE_DIR+'/assets/appicon.ico')
 st.set_page_config(
     page_title="OmniTool",
     page_icon=im,
