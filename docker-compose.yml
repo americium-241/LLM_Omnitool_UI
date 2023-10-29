@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile.streamlit
+    command: ["streamlit", "run", "/app/app_multip_page.py"]
+    volumes:
+      - .:/app
+    working_dir: /app/workspace
+    ports:
+      - "8501:8501"
+    environment:
+      - NAME=World
