@@ -1,4 +1,4 @@
-LLM OmniTool UI
+LLM Omnitool UI
 =============================
 
 A minimalistic streamlit chatbot UI to combine and customize tools for langchain llm agents. OpenAI or local quantized Llama or Mistral models can be used to power the chatbot. The simple integration of custom tools and agents gives a straightforward experience to build a chatbot adapted to one's specific needs. Custom tools can be any python function. So any call to third party agents can be integrated as a tool, from langchain, hugging face or autogen for instance, offering an endless combination of functionnalities to the chatbot. 
@@ -15,7 +15,10 @@ Advanced users can modify the project very easily thanks to its modular architec
 
 Here is a x2 speed demonstration of the app: 
 
-[<img src="./assets/video_thumbnail.png" width="100%">](https://github.com/americium-241/LLM_ultimate_interface/assets/64111755/00d896dc-ad26-4e58-94b3-106d2c9014ed)
+[<img src="./assets/video_thumbnail.png" width="100%">](https://github.com/americium-241/Omnitool_UI/assets/64111755/a21b731f-02c8-400f-af21-fa7962f282e4)
+
+
+
 
 
 Summary
@@ -33,7 +36,11 @@ Summary
 ![Streamlit App](./assets/welcome_screen.png)
 - Browse web and in-app display
   
-[<img src="./assets/video2_thumbnail.png" width="100%">](https://github.com/americium-241/LLM_ultimate_interface/assets/64111755/64c0274e-340d-4b5b-91b0-0a5d129618ed)
+[<img src="./assets/video2_thumbnail.png" width="100%">](https://github.com/americium-241/Omnitool_UI/assets/64111755/d2666654-bb5b-4da2-93cb-b3c0d4fd0e53)
+
+
+
+
 
 - Terminal navigation
 
@@ -62,7 +69,7 @@ The project tree diagram below gives precisions on which file/folder can easily 
    
       Creating a new custom agent involves adding a dedicated file to the `agents_list` directory :
     
-      * Navigate to `OmniToolUI\agents\agents_list\` 
+      * Navigate to `Omnitool_UI\agents\agents_list\` 
       * Create a `.py` file
       * Write a single class with an `initialize_agent` method that returns a `langchain.agents.AgentExecutor` object. 
 
@@ -72,7 +79,7 @@ The project tree diagram below gives precisions on which file/folder can easily 
    
       Creating a new custom tool involves adding a dedicated file to the `tools_list` directory. Here's a procedure to add a custom tool:
 
-       - Navigate to `OmniToolUI\tools\tools_list\`
+       - Navigate to `Omnitool_UI\tools\tools_list\`
        - Add a `.py` file in the folder 
        - Implement your tool class. If you don't need custom options, implement a simple function with a docstring and a return for          the chatbot. Files added to this folder will be automatically integrated into the app as a tool available for the chatbot.
 
@@ -128,13 +135,13 @@ The project tree diagram below gives precisions on which file/folder can easily 
       Download zip file or 
   
   ```bash
-  git clone https://github.com/americium-241/OmniToolUI.git
+  git clone https://github.com/americium-241/Omnitool_UI.git
   ```
    
   2. **Navigate to the Repository Directory**:
      
   ```bash
-  cd path/OmniToolUI
+  cd path/Omnitool_UI
   ```
   
   Using virtual environment is highly recommanded:
@@ -170,7 +177,7 @@ The project tree diagram below gives precisions on which file/folder can easily 
      Once installed, initiate the application by navigating to the root directory and executing the following command to start              the Streamlit server:
      
    ```bash
-   streamlit run OmniToolUI.py
+   streamlit run OmnitoolUI.py
    ```
        
   **Docker-based Deployment**:
