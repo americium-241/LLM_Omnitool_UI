@@ -27,7 +27,7 @@ import random
 
 
 
-if "OPENAI_API_KEY" in os.environ.keys():
+if os.environ["OPENAI_API_KEY"] != '':
     st.session_state.api_keys = True
 BASE_DIR= os.path.dirname(os.path.realpath(__file__))
 logger.debug('BASE_DIR :'+BASE_DIR)
