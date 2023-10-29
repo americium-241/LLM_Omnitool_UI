@@ -1,6 +1,6 @@
 diffusers==0.19.0
-langchain==0.0.315
-langchain_experimental==0.0.30
+langchain
+langchain_experimental
 pandas==2.0.3
 pyautogen==0.1.6
 pyperclip==1.8.2

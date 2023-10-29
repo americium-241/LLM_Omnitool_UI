@@ -11,7 +11,7 @@ import io
 import autogen
 from langchain.tools import WikipediaQueryRun
 from langchain.utilities import WikipediaAPIWrapper
-from langchain.agents import create_pandas_dataframe_agent
+from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.llms import HuggingFaceHub
@@ -444,28 +444,32 @@ def autogen_plan(question):
 
     return user_proxy._oai_messages[list(user_proxy._oai_messages.keys())[0]][1]['content']
 
-
 def powershell_terminal(command):
-    '''send powershell commands to be executed'''
+    '''send powershell commands to be executed separated with ; (each commands are an independant subprocess)'''
     import subprocess
-    process = subprocess.Popen(["powershell", command], stdout=subprocess.PIPE, stderr=subprocess.PIPE , cwd='./workspace')
+    process = subprocess.Popen(["powershell", command], stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd='./workspace')
     result, error = process.communicate()
 
-    # First try decoding with UTF-8
+    # Decode result and error
     try:
         result_str = result.decode('utf-8')
     except UnicodeDecodeError:
-        # If that fails, try 'cp1252' encoding
         result_str = result.decode('cp1252', errors='replace')
 
     try:
         error_str = error.decode('utf-8')
     except UnicodeDecodeError:
         error_str = error.decode('cp1252', errors='replace')
-    if error_str : 
-        return 'Error :'+ error_str
-    else :
-        return 'Success, code returns : ' + result_str
+
+    # Check return code
+    if process.returncode != 0:
+        return 'Error (code: {}): {}'.format(process.returncode, error_str)
+    else:
+        # You might still want to return any "info" or "progress" messages from stderr even if the operation succeeded.
+        # Thus, you can check if error_str is not empty and append it to the success message.
+        additional_info = '\nInfo from stderr: ' + error_str if error_str.strip() else ''
+        return 'Success, code returns: ' + result_str + additional_info
+
 
 
 
