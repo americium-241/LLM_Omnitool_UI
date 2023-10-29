@@ -177,7 +177,7 @@ The project tree diagram below gives precisions on which file/folder can easily 
      Once installed, initiate the application by navigating to the root directory and executing the following command to start              the Streamlit server:
      
    ```bash
-   streamlit run OmnitoolUI.py
+   streamlit run Omnitool_UI.py
    ```
        
   **Docker-based Deployment**:
