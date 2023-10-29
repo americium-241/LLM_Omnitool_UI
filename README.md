@@ -64,7 +64,37 @@ Summary
 The projet is built so important features can easily be modified, such as custom: tools, agents, callbacks and config parameters.
 
 The project tree diagram below gives precisions on which file/folder can easily be modified.
+```python
 
+│   config.py # Modify lists of : KEYS, AGENTS, MODELS ... And many parameters
+│   docker-compose.yml # Docker orchestrator
+│   Dockerfile.streamlit # Docker python image to create app environment 
+│   Omnitool_UI.py # Main
+│   requirements.txt # pip install this file in a virtual environment
+├───agents 
+│   │   agent.py # Base agent config 
+│   ├───agents_list # Monitored folder to create new agents 
+│   │   │   new_agent.py # Custom agent exemple
+├───storage
+│   │   document.py # Document manager
+│   │   logger_config.py # logger config
+│   │   storage.py # Database app storage
+├───tools
+│   │   base_tools.py # Base UI_tool 
+│   │   browser_tool.py # Custom subprocess tool exemple
+│   │   tool_manager.py # Tool lists manager
+│   │   utils.py # Usefull functions
+│   ├───tools_list # Monitored folder to create new tools 
+│   │   │   test_tool.py # Custom class tool exemple
+│   │   │   tools_list.py # All pre-built tools
+├───ui
+│   │   callbacks_ui.py # Manage llm callbacks to enhance interactivity
+│   │   chat_ui.py # Handle Chat page 
+│   │   info_ui.py  # Handle Info page 
+│   │   settings_ui.py # Handle Settings page 
+│   │   sidebar_ui.py # Handle sidebar 
+│   │   tools_ui.py  # Handle Tool page 
+```
   - **Crafting Custom Agents**:
    
       Creating a new custom agent involves adding a dedicated file to the `agents_list` directory :
