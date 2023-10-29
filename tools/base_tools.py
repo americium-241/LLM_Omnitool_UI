@@ -11,7 +11,7 @@ Local_dir = os.path.dirname(os.path.realpath(__file__))
 
 class Ui_Tool(BaseTool):
     name = 'Base_tool'
-    link = r'https://github.com/americium-241/LLM_ultimate_interface'
+    link = r'https://github.com/americium-241/Omnitool_UI/tree/master'
     icon = '🔧 '
     description = 'Description'
 

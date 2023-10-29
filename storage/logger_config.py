@@ -11,7 +11,7 @@ def configure_logger():
         level=LOGGER_LEVEL,  # Set the logging level to DEBUG
         format='%(asctime)s - %(module)s \n - %(levelname)s - %(message)s \n',  # Define the log format
         handlers=[
-        logging.FileHandler(local_DIR+"//OmniToolUI.log"),
+        logging.FileHandler(local_DIR+"//Omnitool_UI.log"),
         logging.StreamHandler()
         ]
     )
