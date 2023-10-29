@@ -63,8 +63,10 @@ Summary
 
 The projet is built so important features can easily be modified, such as custom: tools, agents, callbacks and config parameters.
 
-The project tree diagram below gives precisions on which file/folder can easily be modified.
+The project tree diagram below gives precisions on which file/folder can easily be modified:
+
 ```
+.
 │   config.py # Modify lists of : KEYS, AGENTS, MODELS ... And many parameters
 │   docker-compose.yml # Docker orchestrator
 │   Dockerfile.streamlit # Docker python image to create app environment 
@@ -94,6 +96,7 @@ The project tree diagram below gives precisions on which file/folder can easily 
 │   │   sidebar_ui.py # Handle sidebar 
 │   │   tools_ui.py  # Handle Tool page 
 ```
+
   - **Crafting Custom Agents**:
    
       Creating a new custom agent involves adding a dedicated file to the `agents_list` directory :
