@@ -43,7 +43,7 @@ class Custom_agent_exemple():
 
         Question: the input question you must answer
         Thought: you should always think about what to do
-        Action: the action to take, can be one of [{tool_names}] is you need to use tool
+        Action: the action to take, can be one of {tool_names} is you need to use tool
         Action Input: the input to the action
         Observation: the result of the action
         ... (this Thought/Action/Action Input/Observation can repeat N times)
@@ -137,7 +137,7 @@ class Custom_agent_exemple():
             agent = LLMSingleActionAgent(
                     llm_chain=llm_chain,
                     output_parser=self.output_parser,
-                    stop=["\nObservation:"],
+                    stop=["\Final answer:"],
                     allowed_tools=[t.name for t in self.tools],
                 )
             

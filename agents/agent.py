@@ -6,17 +6,16 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.chat_models import ChatOpenAI
 from langchain_experimental.plan_and_execute import PlanAndExecute, load_agent_executor, load_chat_planner
 from storage.logger_config import logger
-from config import MAX_ITERATIONS
+from config import MAX_ITERATIONS,TEMPERATURE, gguf_models
 from ui.callbacks_ui import Custom_chat_callback,ToolCallback
 class AgentConfig:
-
     def __init__(self,model, agent_type, tools, chat_history, memory):
 
-        if model == 'llama':
-            config = {'context_length': 2048,'temperature':0.1}
-            llm = CTransformers(model="TheBloke/Llama-2-7B-Chat-GGML", model_file = 'llama-2-7b-chat.ggmlv3.q2_K.bin', callbacks=[StreamingStdOutCallbackHandler(),Custom_chat_callback(),ToolCallback()],config=config)
+        if model in list(gguf_models.keys()):
+            config = {'context_length': 2048,'temperature':TEMPERATURE+0.1}
+            llm = CTransformers(model=gguf_models[model]['model'], model_file = gguf_models[model]['file'], callbacks=[StreamingStdOutCallbackHandler(),Custom_chat_callback(),ToolCallback()],config=config)#TheBloke/Llama-2-7B-Chat-GGML" #llama-2-7b-chat.ggmlv3.q2_K.bin
         else : 
-            llm = ChatOpenAI(temperature=0,model=model,streaming=True,verbose=True)
+            llm = ChatOpenAI(temperature=TEMPERATURE,model=model,streaming=True,verbose=True)
 
         self.model=model
         self.llm = llm
