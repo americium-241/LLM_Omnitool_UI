@@ -3,6 +3,6 @@
 *.db
 
 # Ignore all __pycache__ directories
-#__pycache__/
+__pycache__/
 workspace/*
 !workspace/.gitkeep
