@@ -15,10 +15,7 @@ Advanced users can modify the project very easily thanks to its modular architec
 
 Here is a x2 speed demonstration of the app: 
 
-[<img src="./assets/video_thumbnail.png" width="100%">](https://github.com/americium-241/Omnitool_UI/assets/64111755/a21b731f-02c8-400f-af21-fa7962f282e4)
-
-
-
+https://github.com/americium-241/Omnitool_UI/assets/64111755/63f8406a-1cec-44b1-946a-abbaa374010c
 
 
 Summary
@@ -35,15 +32,13 @@ Summary
 - Browse arxiv and wikipedia
 ![Streamlit App](./assets/welcome_screen.png)
 - Browse web and in-app display
-  
-[<img src="./assets/video2_thumbnail.png" width="100%">](https://github.com/americium-241/Omnitool_UI/assets/64111755/d2666654-bb5b-4da2-93cb-b3c0d4fd0e53)
 
+https://github.com/americium-241/Omnitool_UI/assets/64111755/146e15b0-8cab-4aae-93e3-cf082ea3186e
 
 - Terminal navigation
 
 
-https://github.com/americium-241/Omnitool_UI/assets/64111755/63c0a54a-1362-47ba-a7c6-7a67bf0dc1f4
-
+https://github.com/americium-241/Omnitool_UI/assets/64111755/8af2e98a-278f-4fd7-8711-851a6857a994
 
 2. **Tools showcase**:
 
