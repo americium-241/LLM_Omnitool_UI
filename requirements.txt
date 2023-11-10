@@ -1,5 +1,6 @@
 diffusers==0.19.0
-langchain==0.0.325
+langchain==0.0.316
+openai==0.28.1
 langchain_experimental==0.0.36
 pandas==2.0.3
 pyautogen==0.1.6
