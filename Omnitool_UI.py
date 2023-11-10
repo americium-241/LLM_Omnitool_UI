@@ -109,7 +109,7 @@ def option_menu_cb(cb):
     st.session_state.selected_page=st.session_state.menu_opt
 
 
-@st.cache_resource
+#@st.cache_resource
 def init_storage(db_url='sqlite:///'+BASE_DIR+'//storage//app_session_history.db'):
     logger.info('Building storage and doc_manager')
     # Create or connect to db and initialise document manager
