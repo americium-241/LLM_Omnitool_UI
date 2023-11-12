@@ -123,7 +123,7 @@ class hugging_call(Ui_Tool):
         prompt = PromptTemplate(template=template, input_variables=["question"])
         # "openai-gpt"#"google/flan-t5-xxl"  # See https://huggingface.co/models?pipeline_tag=text-generation&sort=downloads for some other options
         llm = HuggingFaceHub(
-        repo_id=st.session_state.hugging_option[0], model_kwargs={"temperature": 0.1, "max_length":  st.session_state.hugging_length_option }
+        repo_id=st.session_state.hugging_option[0], model_kwargs={"temperature": 0.1, "max_tokens":  st.session_state.hugging_length_option }
         )
         llm_chain = LLMChain(prompt=prompt, llm=llm)
 
@@ -347,7 +347,7 @@ def autogen_code_writer(question):
         code_writer,
         message=question,
     )
-    return user_proxy._oai_messages[list(user_proxy._oai_messages.keys())[0]][1]['content']
+    return user_proxy.last_message()["content"]
 
 
 
@@ -412,7 +412,7 @@ def autogen_code_exec(question):
         message=question,
     )
 
-    return user_proxy._oai_messages[list(user_proxy._oai_messages.keys())[0]][1]['content']
+    return user_proxy.last_message()["content"]
 
 
 
@@ -442,7 +442,7 @@ def autogen_plan(question):
         message=question,
     )
 
-    return user_proxy._oai_messages[list(user_proxy._oai_messages.keys())[0]][1]['content']
+    return user_proxy.last_message()["content"]
 
 def powershell_terminal(command):
     '''send powershell commands to be executed separated with ; (each commands are an independant subprocess)'''
