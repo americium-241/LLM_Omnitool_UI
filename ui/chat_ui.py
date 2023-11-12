@@ -32,7 +32,7 @@ def initialize_chat_memory(session_id):
                 st.session_state.memory.chat_memory.add_ai_message(msg["content"])
 
  # AGENT CONFIGURATION
-#@st.cache_data # should be cached when using a local model, but mess up tool synchronisation when on (when you do back and forth).
+@st.cache_data # should be cached when using a local model, but mess up tool synchronisation when on (when you do back and forth).
 def configure_agent(_model,_agent,_tools,_chat_history,_memory,session_id,selected_tools_names):
     logger.info(f'Agent config for session {session_id} with model : {_model}, agent : {_agent}, tools : {_tools}')
     logger.debug(f'Agent config for session {session_id} with memory : {_memory}')
