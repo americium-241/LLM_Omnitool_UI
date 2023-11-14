@@ -19,12 +19,12 @@ https://github.com/americium-241/Omnitool_UI/assets/64111755/63f8406a-1cec-44b1-
 
 ## Disclaimer
 
-This app has been developped to run locally on your private network. Any use in a multi-user public network should be avoided without important modifications to the project. We recommand the use of a docker environment to run the app, which garanties basic safety. Do not forget that some tools allow the chatbot to automatically execute any type of code, so don't ask it to mess with your computer, otherwise it sure will. 
+This app has been developped to run locally on your private network. Any use in a multi-user public network should be avoided without important modifications to the project. We recommend the use of a docker environment to run the app, which guarantees basic safety. Do not forget that some tools allow the chatbot to automatically execute any type of code, so don't ask it to mess with your computer, otherwise it sure will. 
 
 
 ## Try the app
 
-We propose a streamlit cloud version that garanties the security of api keys but keep in mind that the chat history (question/answers) is shared among users, so do not reveal private matters. You can delete your session history afterwards if you click on it. Most features and tools are available in this version but because of the limitations of the streamlit cloud host some are not working (local models, voice commands, powershell execution ...). 
+We propose a streamlit cloud version that guarantees the security of API keys but keep in mind that the chat history (question/answers) is shared among users, so do not reveal private matters. You can delete your session history afterwards if you click on it. Most features and tools are available in this version, but because of the limitations of the streamlit cloud host some are not working (local models, voice commands, powershell execution ...). 
 
 Have a look and try the app at : https://omnitoolui-stcloud.streamlit.app/
 
