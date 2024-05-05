@@ -17,3 +17,6 @@ wikipedia
 playwright
 duckduckgo-search
 torch
+pymupdf
+tiktoken
+faiss-cpu
