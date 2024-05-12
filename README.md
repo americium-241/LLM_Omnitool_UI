@@ -167,13 +167,13 @@ The project tree diagram below gives precisions on which file/folder can easily 
       Download zip file or 
   
   ```bash
-  git clone https://github.com/americium-241/Omnitool_UI.git
+  git clone https://github.com/americium-241/LLM_Omnitool_UI.git
   ```
    
   2. **Navigate to the Repository Directory**:
      
   ```bash
-  cd ./Omnitool_UI
+  cd ./LLM_Omnitool_UI
   ```
   
   Using virtual environment is highly recommanded:
