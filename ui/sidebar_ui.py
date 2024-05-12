@@ -8,7 +8,7 @@ def sidebar():
         if st.button("Start New Session", use_container_width=True): # !!!!! BAD comportement pas bon
             st.session_state.session_id = str(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
             st.session_state.selected_page = 'Chat'
-            st.rerun()
+           
     
         st.markdown("---")
 
